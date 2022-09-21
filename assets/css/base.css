@@ -1,0 +1,115 @@
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --text-color: #333;
+  --primary-color: #de4d05;
+  --header-height: 120px;
+  --navbar-height: 41px;
+  --search-height: calc(var(--header-height) - var(--navbar-height));
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: var(--white-color);
+  font-size: 1.4rem;
+  width: 90px;
+  height: 35px;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  padding: 4px 15px;
+  margin-left: 10px;
+  display: inline-flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn--primary {
+  background-color: orangered;
+  color: var(--white-color);
+  font-size: 1.4rem;
+  width: 90px;
+  height: 35px;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  padding: 4px 15px;
+}
+
+.grid__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+/* test */
+.grid__column-2 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 16.6667%;
+}
+
+.grid__column-2-4 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 20%;
+}
+
+.grid__column-10 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 83.3333%;
+}
+
+
+/* .pagination*/
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-items{
+  list-style: none;
+}
+.pagination-items__link{
+  display: block;
+  color: #9B9B9B;
+  text-decoration: none;
+  font-size: 2rem;
+  min-width: 35px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 2px;
+  text-align: center;
+  font-weight: 300;
+  margin: 0 15px;
+}
+.pagination-items__link:hover{
+  color: var(--primary-color);
+}
+.pagination-items-icon{
+  position: relative;
+  top: 2px;
+  margin: 0 10px;
+}
+.pagination-items__link-active .pagination-items__link{
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+.pagination-items__link-active .pagination-items__link:hover{
+  opacity: 0.9;
+}
